@@ -21,7 +21,7 @@ const Assets = {
 	Neo4j: a('neo4j.svg'),
 	Nginx: a('nginx.svg'),
 	Numpy: a('numpy.svg'),
-	Pandas: a('pandas.svg'),
+	Pandas: a('pandas.png', 'pandas.svg'),
 	RabbitMQ: a('rabbitmq.svg'),
 	Rust: a('rust.svg', 'rust-dark.png'),
 	Scrapy: a('scrapy.png'),
@@ -70,7 +70,19 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	Laravel: a('Laravel.png'),
+	SpringBoot: a('springBoot.png'),
+	Azure: a('azure.png'),
+	Postman: a('postman.png'),
+	Satoripop: a('satoripop.png'),
+	Anypli: a('anypli.png'),
+	FST: a('fst.png'),
+	PHP: a('php.png'),
+	GitHub: a('github.png', 'github-dark.png'),
+	LoyaltyApp: a('loyaltyApp.png', 'loyaltyApp-black.png'),
+	ZeroWaste: a('0waste.png', '0waste-black.png'),
+	Footure: a('footure.png'),
 };
 
 export default Assets;

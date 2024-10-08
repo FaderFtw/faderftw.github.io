@@ -3,28 +3,40 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
+		degree: 'Engineering Degree',
+		description: 'Software Engineering',
 		location: 'Tunisia',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		logo: Assets.FST, 
+		name: 'Faculty of Sciences Tunis',
+		organization: 'Faculty of Sciences Tunis',
+		period: { from: new Date(2022, 0, 1), to: new Date(2024, 5, 1) }, // Adjust year as per your graduation date
 		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		slug: 'engineering-degree',
+		subjects: ['Software Development', 'Agile Methods', 'Artificial Intelligence', 'Machine Learning', 'DevOps', 'Computer Science', 'Cloud Foundations']
 	},
 	{
-		degree: 'PhD of Computer Science',
-		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		degree: 'Integrated Preparatory Cycle',
+		description: 'Mathematics, Physics, Computer Science',
+		location: 'Tunisia',
+		logo: Assets.FST, 
+		name: 'Faculty of Sciences Tunis',
+		organization: 'Faculty of Sciences Tunis',
+		period: { from: new Date(2020, 9, 1), to: new Date(2022, 9, 1) },
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		slug: 'preparatory-cycle',
+		subjects: ['Mathematics', 'Physics', 'Computer Science']
+	},
+	{
+		degree: 'High School Diploma',
+		description: 'Mathematics',
+		location: 'Tunisia',
+		logo: Assets.Unknown,
+		name: 'Lycée Lamta',
+		organization: 'Lycée Lamta',
+		period: { from: new Date(2016, 9, 1), to: new Date(2020, 8, 30) },
+		shortDescription: '',
+		slug: 'high-school-diploma-mathematics',
+		subjects: ['Mathematics', 'Physics', 'Computer Science']
 	}
 ];
 

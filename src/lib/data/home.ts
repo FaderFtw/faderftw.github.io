@@ -3,39 +3,30 @@ import { getSkills } from './skills';
 
 export const title = 'Home';
 
-export const name = 'Name';
+export const name = 'Fadi';
 
-export const lastName = 'LastName';
+export const lastName = 'Zaafrane';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
+	'I am a software engineer with strong skills in full-stack development, Machine Learning, Cloud and DevOps technologies. I am currently seeking an internship for my final engineering project to apply my expertise in developing efficient, user-focused solutions. I am driven by challenges and eager to contribute to impactful projects in a professional environment.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{ 
+		platform: Platform.GitHub, 
+		link: 'https://github.com/FaderFtw' 
+	},
+	{ 
+		platform: Platform.LeetCode, 
+		link: 'https://leetcode.com/TheFader/' 
+	},
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
-	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
-		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
+		link: 'https://www.linkedin.com/in/fadi-zaafrane/'
 	},
 	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
-	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
+		link: 'fady.zaafrane@gmail.com'
 	}
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
+export const skills = getSkills('springboot', 'aws', 'docker', 'angular', 'reactjs', 'laravel', 'python', 'github');

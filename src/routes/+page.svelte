@@ -25,8 +25,13 @@
 >
 	<div class="md:flex-1 gap-10px">
 		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
-		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
-			{description}
+		<p class="text-[var(--tertiary-text)]  text-center md:text-justify lg:text-justify md:text-left text-[1.2em] font-extralight">
+			I am a software engineer with strong skills in 
+			<span class="font-bold">Full-stack development</span>, 
+			<span class="font-bold">Machine Learning</span>, 
+			<span class="font-bold">Cloud</span>, and 
+			<span class="font-bold">DevOps </span>technologies. I am currently seeking an 
+			<span class="font-bold">internship </span> for <span class="font-bold"> my final engineering project</span> to apply my expertise in developing efficient, user-focused solutions. I am driven by challenges and eager to contribute to impactful projects in a professional environment.
 		</p>
 		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
 			{#each links as link}
