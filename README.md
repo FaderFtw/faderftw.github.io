@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is my personal portfolio website built using [Svelte](https://svelte.dev/) and deployed using [GitHub Pages](https://pages.github.com/). The website showcases my projects, skills, and experience as a software developer.
+This is my personal portfolio website built using [Svelte](https://svelte.dev/) and deployed using [GitHub Pages](https://pages.github.com/). The website showcases my projects, skills, and experience as a software engineer.
 
 ## Features
 
