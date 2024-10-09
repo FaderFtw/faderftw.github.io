@@ -9,4 +9,4 @@ This is my personal portfolio website built using [Svelte](https://svelte.dev/) 
 - Deployed using GitHub Actions and GitHub Pages.
   
 ## Demo
-You can view the live website at: [https://faderftw.github.io.github.io](https://faderftw.github.io.github.io)
+You can view the live website at: [https://faderftw.github.io](https://faderftw.github.io)
