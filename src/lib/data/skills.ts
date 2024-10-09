@@ -138,7 +138,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'numpy',
-		color: 'green',
+		color: 'blue',
 		description: 'NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices.',
 		logo: Assets.Numpy,
 		name: 'NumPy',
@@ -152,6 +152,14 @@ export const items = [
 		name: 'Pandas',
 		category: 'library'
 	}),
+	defineSkill({
+		slug: 'tensorflow',
+		color: '#ff6f00',
+		description: 'TensorFlow is an open-source machine learning framework used for training and deploying machine learning models, especially deep learning models.',
+		logo: Assets.TensorFlow,
+		name: 'TensorFlow',
+		category: 'library'
+	}),	
 	defineSkill({
 		slug: 'kubernetes',
 		color: 'blue',
@@ -169,13 +177,21 @@ export const items = [
 		category: 'devops'
 	}),
 	defineSkill({
-		slug: 'c',
-		color: 'blue',
+		slug: 'C',
+		color: '#3c489e',
 		description: 'C is a general-purpose, procedural programming language that is widely used for system programming and embedded programming.',
 		logo: Assets.C, 
 		name: 'C',
 		category: 'pro-lang'
 	}),
+	defineSkill({
+		slug: 'cpp',
+		color: '#37048c',
+		description: 'C++ is a general-purpose, procedural programming language widely used for system programming, embedded programming, and competitive programming, thanks to its performance and flexibility.',
+		logo: Assets.Cpp, 
+		name: 'C++',
+		category: 'pro-lang'
+	}),	
 	defineSkill({
 		slug: 'azure',
 		color: 'blue',

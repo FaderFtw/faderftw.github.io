@@ -79,7 +79,7 @@
 	{:else}
 		<div class="flex flex-col items-center overflow-x-hidden">
 			<Banner img={getAssetURL(data.skill.logo)}>
-				<MainTitle>{data.skill.name}</MainTitle>
+				<MainTitle loop={false} typedItems={[`${data.skill.name}`]} ></MainTitle>
 			</Banner>
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
 				<div class="px-10px m-y-5">

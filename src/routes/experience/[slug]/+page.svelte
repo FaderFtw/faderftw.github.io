@@ -33,7 +33,7 @@
 			<Banner img={getAssetURL(data.experience.logo)}>
 				<div class="col-center p-y-20">
 					<div class="text-0.9em">
-						<MainTitle>{data.experience.name}</MainTitle>
+						<MainTitle loop={false} typedItems={[`${data.experience.name}`]} ></MainTitle>
 					</div>
 					<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
 						{data.experience.company} · {data.experience.location} · {data.experience.type}

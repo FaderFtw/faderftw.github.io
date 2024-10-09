@@ -22,6 +22,7 @@ const Assets = {
 	Nginx: a('nginx.svg'),
 	Numpy: a('numpy.svg'),
 	Pandas: a('pandas.png', 'pandas.svg'),
+	TensorFlow: a('tensorflow.png'),
 	RabbitMQ: a('rabbitmq.svg'),
 	Rust: a('rust.svg', 'rust-dark.png'),
 	Scrapy: a('scrapy.png'),
@@ -83,6 +84,7 @@ const Assets = {
 	LoyaltyApp: a('loyaltyApp.png', 'loyaltyApp-black.png'),
 	ZeroWaste: a('0waste.png', '0waste-black.png'),
 	Footure: a('footure.png'),
+	ImageProcessingApp: a('imageProcessingApp.png'),
 };
 
 export default Assets;

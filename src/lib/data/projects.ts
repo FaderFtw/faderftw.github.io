@@ -5,7 +5,7 @@ import type { Project } from '../types';
 export const items: Array<Project> = [
     {
         slug: 'loyaltyApp',
-        color: 'black', // Bootstrap blue
+        color: 'gray', // Bootstrap blue
         description:
             'Developed a loyalty application optimizing customer engagement for retail. Implemented a points-based system with secure interfaces, user-friendly admin controls, and integrated authentication using Keycloak. Managed deployment with Docker.',
         shortDescription:
@@ -17,7 +17,7 @@ export const items: Array<Project> = [
             from: new Date(2024, 6),
             to: new Date(2024, 8)
         },
-        skills: getSkills('angular', 'springboot', 'postgresql', 'docker', 'keycloak', 'js', 'html', 'css', 'github'),
+        skills: getSkills('angular', 'springboot', 'postgresql', 'docker', 'keycloak', 'js', 'html', 'css', 'java', 'github', 'postman'),
         type: 'Web Application',
 		screenshots: [
 			{
@@ -52,7 +52,7 @@ export const items: Array<Project> = [
     },
     {
         slug: 'zeroWaste',
-        color: '#91c534', // Yellow for environmental
+        color: '#91c534',
         description:
             'Designed a system to track and optimize waste collection for the municipality of Takelsa using GPS tracking. Developed a dashboard for real-time tracking of trucks and mapped collection points to improve efficiency.',
         shortDescription:
@@ -106,6 +106,85 @@ export const items: Array<Project> = [
 			}
 		]
     },
+	{
+		slug: 'imageProcessingApp',
+		color: '#4ecbfb',
+		description:
+			'Developed an image processing application that allows users to import images and perform various manipulations like contrast adjustment, luminance changes, grayscale conversion, filtering (mean, median, min, max), edge detection, and histogram display. Additional features include image saving and printing capabilities. Implemented using ReactJS for the front-end and Python for the back-end.',
+		shortDescription:
+			'Image processing application with manipulation features like filtering, grayscale conversion, and edge detection.',
+		links: [{ to: 'https://github.com/AlaaBrahim/traitement-image', label: 'ImageProcessingApp' }],
+		logo: Assets.ImageProcessingApp, 
+		name: 'ImageProcessingApp',
+		period: {
+			from: new Date(2024, 3), 
+			to: new Date(2024, 4)
+		},
+		skills: getSkills('reactjs', 'python', 'html', 'css', 'github'),
+		type: 'Web Application',
+		screenshots: [
+			{
+				label: 'Home Screen',
+				src: '/screenshots/ImageProcessingApp/HomeScreen.png'
+			},
+			{
+				label: 'Filtered Image',
+				src: '/screenshots/ImageProcessingApp/BasicAdjustments.png'
+			},
+			{
+				label: 'Edge Detection Screen',
+				src: '/screenshots/ImageProcessingApp/EdgeDetection.png'
+			},
+			{
+				label: 'Image Histogram Screen',
+				src: '/screenshots/ImageProcessingApp/ImageHistogram.png'
+			},
+			{
+				label: 'Example Filter Screen',
+				src: '/screenshots/ImageProcessingApp/MedianFilter.png'
+			}
+		]
+	},
+	{
+		slug: 'pistachioAnomalyDetection',
+		color: 'gray',
+		description:
+			'Developed an anomaly detection system for pistachio classification using autoencoders. The project involved creating a binary classification dataset from adulterated spinach and pure pistachio images. Implemented image preprocessing techniques, trained an autoencoder for anomaly detection, and evaluated performance using confusion matrices and error thresholds.',
+		shortDescription:
+			'Anomaly detection for pistachio classification using autoencoders and image preprocessing.',
+		links: [{ to: 'https://github.com/FaderFtw/Food-Anomaly-Detection', label: 'PistachioAnomalyDetection' }],
+		logo: Assets.Unknown,
+		name: 'Pistachio Anomaly Detection',
+		period: {
+			from: new Date(2024, 3), 
+			to: new Date(2024, 4)
+		},
+		skills: getSkills('tensorflow', 'python', 'numpy', 'pandas', 'github'),
+		type: 'Deep Learning (CNN) Project',
+		screenshots: [
+			
+		]
+	},
+	{
+		slug: 'darknetTrafficClassification',
+		color: 'black',
+		description:
+			'Developed a darknet traffic classification system using the CIC-Darknet2020 dataset. Implemented KNN, Random Forest, and MLP models, with Random Forest showing the best performance. Enhanced skills in machine learning, big data processing, and cybersecurity using pandas, scikit-learn, and TensorFlow.',
+		shortDescription:
+			'Darknet traffic classification using the CIC-Darknet2020 dataset with Random Forest, KNN, and MLP models.',
+		links: [{ to: 'https://github.com/FaderFtw/CIC-Darknet2020-Classification', label: 'DarknetTrafficClassification' }],
+		logo: Assets.Unknown,
+		name: 'Darknet Traffic Classification',
+		period: {
+			from: new Date(2024, 2),
+			to: new Date(2024, 3)
+		},
+		skills: getSkills('tensorflow', 'python', 'numpy', 'pandas', 'github'),
+		type: 'Machine Learning Project',
+		screenshots: []
+	}
+	
+	
 ];
 
 export const title = 'Projects';

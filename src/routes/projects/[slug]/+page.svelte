@@ -42,7 +42,7 @@
 			<Banner img={getAssetURL(data.project.logo)}>
 				<div class="col-center p-y-20">
 					<div class="text-0.9em">
-						<MainTitle>{data.project.name}</MainTitle>
+						<MainTitle loop={false} typedItems={[`${data.project.name}`]} ></MainTitle>
 					</div>
 					<p class="font-300 text-center text-[var(--tertiary-text)] m-y-2">{data.project.type}</p>
 					<div class="w-75%">
