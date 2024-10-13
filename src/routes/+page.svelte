@@ -2,8 +2,9 @@
 	import Carrousel from '$lib/components/Carrousel/Carrousel.svelte';
 	import Icon from '$lib/components/Icon/Icon.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
+	import ActionButton from '$lib/components/ActionButton/ActionButton.svelte';
 	import { titleSuffix } from '@data/app';
-	import { links, description, lastName, name, title, skills } from '@data/home';
+	import { links, lastName, name, email, title, skills } from '@data/home';
 	import { items as skillsItems } from '@data/skills';
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
@@ -17,53 +18,6 @@
 	};
 </script>
 
-<style>
-    .contact-btn {
-        display: inline-block;
-        position: relative;
-        padding: 10px 20px;
-        border-radius: 30px;
-        background: linear-gradient(145deg, #e0e0e0, #cfcfcf); 
-        color: #333; 
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        z-index: 1;
-    }
-    .contact-btn::before {
-        content: '';
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        right: -3px;
-        bottom: -3px;
-         background: linear-gradient(45deg, #cdcdcd, #2e2e2e, #ababad, #171717);
-        background-size: 400% 400%;
-        z-index: -2;
-        border-radius: 32px;
-        animation: animatedBorder 3s ease infinite;
-    }
-    .contact-btn::after {
-        content: '';
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        background: inherit;
-        border-radius: 28px;
-        z-index: -1;
-    }
-    .contact-btn:hover {
-        background: linear-gradient(145deg, #cfcfcf, #e0e0e0); 
-    }
-    @keyframes animatedBorder {
-        0% { background-position: 0% 50% }
-        50% { background-position: 100% 50% }
-        100% { background-position: 0% 50% }
-    }
-</style>
-
-
 <svelte:head>
 	<title>{useTitle(title, titleSuffix)}</title>
 </svelte:head>
@@ -72,7 +26,7 @@
 	<div class="md:flex-1 gap-10px">
 		<MainTitle 
 			classes="md:text-left"
-			typedItems={[`${name} ${lastName},`, 'Full-stack developper,', 'ML enthusiast,']} 
+			typedItems={[`${name} ${lastName},`, 'Full-stack developer,', 'ML enthusiast,']} 
 		/>
 		
 		<p class="text-[var(--tertiary-text)] text-center md:text-justify lg:text-justify md:text-left text-[1.2em] font-extralight mx-3 md:mx-0">
@@ -96,13 +50,8 @@
 				</a>
 			  {/each}
 			</div>
-			<a
-				href="mailto:fady.zaafrane@gmail.com"
-				class="contact-btn text-[var(--tertiary-text)] font-bold  no-underline"
-			>
-				Contact Me
-			</a>
-		  </div>
+			<ActionButton href="mailto:{email}" label="Contact Me" />
+		</div>
 	</div>
 	<Carrousel items={skills ?? skillsItems} />
 </div>
