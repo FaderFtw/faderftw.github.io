@@ -105,6 +105,14 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
+		slug: 'ts',
+		color: '#2d79c7',
+		description: 'TypeScript is a strongly typed programming language that builds on JavaScript.',
+		logo: Assets.TypeScript,
+		name: 'TypeScript',
+		category: 'pro-lang'
+	}),
+	defineSkill({
 		slug: 'postgresql',
 		color: 'blue',
 		description: 'PostgreSQL is a powerful, open-source object-relational database system.',
@@ -223,7 +231,15 @@ export const items = [
 		logo: Assets.GitHub,
 		name: 'GitHub',
 		category: 'devtools'
-	}),	
+	}),
+	defineSkill({
+		slug: 'svelte',
+		color: 'orange',
+		description: 'Svelte is a new way to build web applications, featuring a reactive programming model and a component-based architecture.',
+		logo: Assets.Svelte,
+		name: 'Svelte',
+		category: 'framework'
+	}),
 ] as const;
 
 export const title = 'Skills';

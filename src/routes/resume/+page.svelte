@@ -6,6 +6,8 @@
 	let pdfUrl = data; // Assuming 'data' contains the PDF URL
 </script>
 
+
+
 <CommonPage {title}>
 	<div class="resume-page flex flex-col items-center px-6 max-w-7xl">
 		<section class="guide text-center mb-3">

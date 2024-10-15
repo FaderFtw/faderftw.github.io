@@ -17,7 +17,7 @@ export const items: Array<Project> = [
             from: new Date(2024, 6),
             to: new Date(2024, 8)
         },
-        skills: getSkills('angular', 'springboot', 'postgresql', 'docker', 'keycloak', 'js', 'html', 'css', 'java', 'github', 'postman'),
+        skills: getSkills('angular', 'springboot', 'postgresql', 'docker', 'keycloak', 'js', 'ts', 'html', 'css', 'java', 'github', 'postman'),
         type: 'Web Application',
 		screenshots: [
 			{
@@ -120,7 +120,7 @@ export const items: Array<Project> = [
 			from: new Date(2024, 3), 
 			to: new Date(2024, 4)
 		},
-		skills: getSkills('reactjs', 'python', 'html', 'css', 'github'),
+		skills: getSkills('reactjs', 'python', 'html', 'css', 'js', 'ts', 'github'),
 		type: 'Web Application',
 		screenshots: [
 			{
@@ -182,9 +182,43 @@ export const items: Array<Project> = [
 		skills: getSkills('tensorflow', 'python', 'numpy', 'pandas', 'github'),
 		type: 'Machine Learning Project',
 		screenshots: []
+	},
+	{
+		slug: 'myPortfolio',
+		color: 'black',
+		description:
+			'Developed a personal portfolio website to showcase projects, skills, and experiences. Implemented a responsive design using Svelte, TypeScript, and Tailwind CSS. Enhanced SEO with metadata and accessibility features. Deployed the site using GitHub Actions CI/CD and GitHub Pages.',
+		shortDescription:
+			'Personal portfolio website showcasing projects, skills, and experiences, built with Svelte and Tailwind CSS.',
+		links: [{ to: 'https://github.com/FaderFtw/faderftw.github.io', label: 'MyPortfolio' }],
+		logo: Assets.Portfolio,
+		name: 'MyPortfolio',
+		period: {
+			from: new Date(2024, 9),
+			to: new Date(2024, 9)
+		},
+		skills: getSkills('svelte', 'js', 'ts', 'tailwindcss', 'html', 'css', 'github'),
+		type: 'Web Application',
+		screenshots: []
+	},
+	{
+		slug: 'competitiveProgramming',
+		color: 'black',
+		description:
+			'Competitive programming solutions for CodeForces, LeetCode, and CSES. Implemented solutions in C++, Python, and Java for various problems, including data structures, algorithms, and mathematical challenges. Enhanced problem-solving skills and algorithmic thinking.',
+		shortDescription:
+			'Competitive programming solutions for CodeForces, LeetCode, and CSES in C++, Python, and Java.',
+		links: [{ to: 'https://github.com/FaderFtw/CP', label: 'CompetitiveProgramming' }],
+		logo: Assets.Unknown,
+		name: 'Competitive Programming Solutions',
+		period: {
+			from: new Date(2022, 0),
+			to: new Date(2024, 7)
+		},
+		skills: getSkills('cpp', 'python'),
+		type: 'Competitive Programming',
+		screenshots: []
 	}
-	
-	
 ];
 
 export const title = 'Projects';

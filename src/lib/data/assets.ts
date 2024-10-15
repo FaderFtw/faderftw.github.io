@@ -85,6 +85,7 @@ const Assets = {
 	ZeroWaste: a('0waste.png', '0waste-black.png'),
 	Footure: a('footure.png'),
 	ImageProcessingApp: a('imageProcessingApp.png'),
+	Portfolio: a('portfolio.png')
 };
 
 export default Assets;
