@@ -85,7 +85,10 @@ const Assets = {
 	ZeroWaste: a('0waste.png', '0waste-black.png'),
 	Footure: a('footure.png'),
 	ImageProcessingApp: a('imageProcessingApp.png'),
-	Portfolio: a('portfolio.png')
+	Portfolio: a('portfolio.png'),
+	Terraform: a('terraform.png'),
+	JMeter: a('jmeter.png'),
+	Jenkins: a('jenkins.png')
 };
 
 export default Assets;

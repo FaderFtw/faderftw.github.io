@@ -189,7 +189,7 @@ export const items: Array<Project> = [
 		description:
 			'Developed a personal portfolio website to showcase projects, skills, and experiences. Implemented a responsive design using Svelte, TypeScript, and Tailwind CSS. Enhanced SEO with metadata and accessibility features. Deployed the site using GitHub Actions CI/CD and GitHub Pages.',
 		shortDescription:
-			'Personal portfolio website showcasing projects, skills, and experiences, built with Svelte and Tailwind CSS.',
+			'Personal portfolio website showcasing projects, skills, and experiences, built with Svelte and Tailwind CSS. Deployed using GitHub Actions CI/CD and GitHub Pages.',
 		links: [{ to: 'https://github.com/FaderFtw/faderftw.github.io', label: 'MyPortfolio' }],
 		logo: Assets.Portfolio,
 		name: 'MyPortfolio',
@@ -218,7 +218,55 @@ export const items: Array<Project> = [
 		skills: getSkills('cpp', 'python'),
 		type: 'Competitive Programming',
 		screenshots: []
+	},
+	{
+		slug: 'devopsProject',
+		color: 'cyan',
+		description:
+        'Developed a robust DevOps pipeline for a simple Spring Boot application with a React frontend. This project integrates a comprehensive CI/CD process using Jenkins, including stages for building, testing, and deploying the application. Key features include Maven for dependency management, Docker for containerization, and Kubernetes for orchestration. The pipeline incorporates infrastructure as code using Terraform for provisioning AWS resources, performance testing with JMeter, and monitoring with Prometheus and Grafana, ensuring a reliable and scalable deployment. We used Git Flow for streamlined team collaboration, with automated email notifications for build statuses to enhance visibility and coordination.',
+		shortDescription:
+			'CI/CD pipeline for a Spring Boot and React application, utilizing Docker, Kubernetes, Terraform, JMeter, Prometheus, Grafana, and Git Flow for collaboration and monitoring.',
+		links: [{ to: 'https://github.com/FaderFtw/IGL5-G1-ProjetFoyer', label: 'DevOps Project' }],
+		logo: Assets.Unknown,
+		name: 'Academic DevOps Project',
+		period: {
+			from: new Date(2024, 8), 
+			to: new Date(2024, 10)  
+		},
+		skills: getSkills('jenkins', 'docker', 'kubernetes', 'jmeter', 'aws', 'terraform', 'github'),
+		type: 'DevOps Project',
+		screenshots: [
+			{
+				label: 'Jenkins Pipeline',
+				src: '/screenshots/AcademicDevOpsProject/GreenPipeline.png'
+			},
+			{
+				label: 'Terraform Stage',
+				src: '/screenshots/AcademicDevOpsProject/IACTerraformStage.png'
+			},
+			{
+				label: 'Kubernetes Deployment with AWS',
+				src: '/screenshots/AcademicDevOpsProject/K8S.png'
+			},
+			{
+				label: 'JMeter Testing',
+				src: '/screenshots/AcademicDevOpsProject/JMeter.png'
+			},
+			{
+				label: 'Grafana Dashboard',
+				src: '/screenshots/AcademicDevOpsProject/MonitoringAppPodAfterJMeterPerformanceTest.png'
+			},
+			{
+				label: 'Final Result',
+				src: '/screenshots/AcademicDevOpsProject/FrontEnd.png'
+			},
+			{
+				label: 'Containerization with Docker',
+				src: '/screenshots/AcademicDevOpsProject/Docker.png'
+			}
+		]
 	}
+	
 ];
 
 export const title = 'Projects';

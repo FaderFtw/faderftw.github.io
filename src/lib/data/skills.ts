@@ -240,6 +240,30 @@ export const items = [
 		name: 'Svelte',
 		category: 'framework'
 	}),
+	defineSkill({
+		slug: 'terraform',
+		color: 'blue',
+		description: 'Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services.',
+		logo: Assets.Terraform,
+		name: 'Terraform',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'jmeter',
+		color: '#d22128',
+		description: 'Apache JMeter is an open-source software designed to load test functional behavior and measure performance.',
+		logo: Assets.JMeter,
+		name: 'JMeter',
+		category: 'test'
+	}),
+	defineSkill({
+		slug: 'jenkins',
+		color: 'red',
+		description: 'Jenkins is an open-source automation server that helps automate the parts of software development related to building, testing, and delivering, facilitating continuous integration and continuous delivery.',
+		logo: Assets.Jenkins,
+		name: 'Jenkins',
+		category: 'devops'
+	}),
 ] as const;
 
 export const title = 'Skills';
