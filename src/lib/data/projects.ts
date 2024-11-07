@@ -265,6 +265,65 @@ export const items: Array<Project> = [
 				src: '/screenshots/AcademicDevOpsProject/Docker.png'
 			}
 		]
+	},
+	{
+		slug: 'awsCloudProject',
+		color: 'lightblue',
+		description:
+			'Developed a cloud-based infrastructure on AWS to support a scalable and secure three tier web application. The architecture includes a Virtual Private Cloud (VPC) setup with public and private subnets across multiple Availability Zones to ensure high availability. Utilized NAT gateways for secure internet access in private subnets and an Application Load Balancer to distribute incoming traffic across EC2 instances for web and application servers. Integrated AWS Auto Scaling to dynamically adjust the number of EC2 instances based on traffic and load, optimizing cost and performance. Deployed Amazon RDS in a multi-AZ configuration for high availability and automated failover for the database layer. Additionally, implemented a static website hosted on Amazon S3 for serving frontend assets, achieving cost-efficient delivery and reliability.',
+		shortDescription:
+			'AWS-based scalable and secure infrastructure with multi-AZ support, load balancing, auto-scaling, and static website hosting on S3.',
+		links: [],
+		logo: Assets.Unknown,
+		name: 'Academic AWS Cloud Project',
+		period: {
+			from: new Date(2024, 1),
+			to: new Date(2023, 11)
+		},
+		skills: getSkills('aws'),
+		type: 'Cloud Infrastructure Project',
+		screenshots: [
+			{
+				label: 'Architecture Diagram',
+				src: '/screenshots/AcademicCloudProject/Architecture.png'
+			},
+			{
+				label: 'Virtual Private Cloud (VPC)',
+				src: '/screenshots/AcademicCloudProject/VPC3.png'
+			},
+			{
+				label: 'Internet Gateway',
+				src: '/screenshots/AcademicCloudProject/igw.png'
+			},
+			{
+				label: 'NAT Gateway',
+				src: '/screenshots/AcademicCloudProject/NatGateway.png'
+			},
+			{
+				label: 'Route Tables',
+				src: '/screenshots/AcademicCloudProject/RouteTables.png'
+			},
+			{
+				label: 'Security Groups',
+				src: '/screenshots/AcademicCloudProject/SecurityGroups.png'
+			},
+			{
+				label: 'Target Groups for Load Balancers and Auto Scaling',
+				src: '/screenshots/AcademicCloudProject/LB.png'
+			},
+			{
+				label: 'Database Configuration',
+				src: '/screenshots/AcademicCloudProject/DBConfig.png'
+			},
+			{
+				label: 'S3 Static Website',
+				src: '/screenshots/AcademicCloudProject/S3.png'
+			},
+			{
+				label: 'Final Result',
+				src: '/screenshots/AcademicCloudProject/Result.png'
+			}
+		]
 	}
 	
 ];
