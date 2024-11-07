@@ -51,22 +51,44 @@ export const items: Array<Project> = [
 		]
     },
     {
-        slug: 'zeroWaste',
-        color: '#91c534',
-        description:
-            'Designed a system to track and optimize waste collection for the municipality of Takelsa using GPS tracking. Developed a dashboard for real-time tracking of trucks and mapped collection points to improve efficiency.',
-        shortDescription:
-            'Waste management system using GPS tracking and real-time monitoring to optimize waste collection routes.',
-        links: [{ to: 'https://www.zerowastetakelsa.tn', label: '0Waste' }],
-        logo: Assets.ZeroWaste,
-        name: '0Waste',
-        period: {
-            from: new Date(2024, 0),
+		slug: "zeroWaste",
+		color: "#91c534",
+		description:
+			"Designed and deployed a waste management system for the municipality of Takelsa to optimize waste collection routes. This system leverages GPS tracking to monitor waste collection trucks in real-time and provides a dashboard for efficient route mapping. Deployed on Microsoft Azure using Azure Container Instances to streamline scalability and maintain continuous operations.",
+		shortDescription:
+			"Waste management system with GPS tracking, real-time monitoring, and route optimization, deployed on Azure Container Instances.",
+		links: [{ to: "https://www.zerowastetakelsa.tn", label: "0Waste" }],
+		logo: Assets.ZeroWaste,
+		name: "0Waste",
+		period: {
+			from: new Date(2024, 0),
             to: new Date(2024, 8)
-        },
-        skills: getSkills('php', 'mysql', 'js', 'html', 'css', 'docker', 'github'),
-        type: 'Web Application'
-    },
+		},
+		skills: getSkills("php", "mysql", "js", "html", "css", "docker", "github", "azure"),
+		type: "Web Application",
+		screenshots: [
+			{
+				label: 'Resource Group',
+				src: '/screenshots/0waste/ResourceGroup.png'
+			},
+			{
+				label: 'Container Group in Azure Portal',
+				src: '/screenshots/0waste/ContainerGroup.png'
+			},
+			{
+				label: 'Container Group in Azure CLI',
+				src: '/screenshots/0waste/ContainerGroupAzureCLI.png'
+			},
+			{
+				label: 'Container Registry',
+				src: '/screenshots/0waste/ContainerRegistry.png'
+			},
+			{
+				label: 'Result',
+				src: '/screenshots/0waste/Result.png'
+			}
+		]
+	},
 	{
         slug: 'footure',
         color: 'blue', 
