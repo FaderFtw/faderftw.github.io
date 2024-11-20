@@ -346,7 +346,70 @@ export const items: Array<Project> = [
 				src: '/screenshots/AcademicCloudProject/Result.png'
 			}
 		]
+	},
+	{
+		slug: 'microservicesSpringCloud',
+		color: 'green', 
+		description:
+			'Developed a microservices architecture to explore Spring Cloud components. Implemented a Config Server for centralized configuration management, Eureka Server for service discovery, and API Gateway for routing. Created User and Product microservices with MySQL integration for separate databases. The entire project is dockerized and run with Docker Compose. Integrated Postman for testing, with load balancing and dynamic routing through the API Gateway.',
+		shortDescription:
+			'Spring Cloud microservices architecture with centralized configuration, service discovery, API Gateway, MySQL integration, and Dockerized components.',
+		links: [{ to: 'https://github.com/FaderFtw/Microservices-Product-Management', label: 'MicroservicesSpringCloud' }],
+		logo: Assets.Unknown,
+		name: 'Microservices Architecture with Spring Cloud',
+		period: {
+			from: new Date(2024, 10),
+			to: new Date(2024, 10)
+		},
+		skills: getSkills(
+			'springboot',
+			'mysql',
+			'postman',
+			'java',
+			'docker',
+			'github'
+		),
+		type: 'Web Application',
+		screenshots: [
+			{
+				label: 'Docker Containers',
+				src: '/screenshots/ArchitectureMicroservices/DockerContainers.png'
+			},
+			{
+				label: 'Eureka Server UI',
+				src: '/screenshots/ArchitectureMicroservices/EurekaServerUI.png'
+			},
+			{
+				label: 'Product Microservice',
+				src: '/screenshots/ArchitectureMicroservices/ProductMicroservice.png'
+			},
+			{
+				label: 'Product Microservice API Test',
+				src: '/screenshots/ArchitectureMicroservices/ProductMicroServiceAPITest.png'
+			},
+			{
+				label: 'Product Service Config File',
+				src: '/screenshots/ArchitectureMicroservices/ProductServiceConfigFile.png'
+			},
+			{
+				label: 'Project Structure',
+				src: '/screenshots/ArchitectureMicroservices/ProjectStructure.png'
+			},
+			{
+				label: 'User Microservice',
+				src: '/screenshots/ArchitectureMicroservices/UserMicroservice.png'
+			},
+			{
+				label: 'User Microservice API Test',
+				src: '/screenshots/ArchitectureMicroservices/UserMicroServiceAPITest.png'
+			},
+			{
+				label: 'User Service Config File',
+				src: '/screenshots/ArchitectureMicroservices/UserServiceConfigFile.png'
+			}
+		]
 	}
+	
 	
 ];
 
