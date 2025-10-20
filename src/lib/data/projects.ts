@@ -3,9 +3,88 @@ import { getSkills } from './skills';
 import type { Project } from '../types';
 
 export const items: Array<Project> = [
+	{
+		slug: 'containersManager',
+		color: '#69b1da',
+		description:
+			'Developed a Docker container management platform during my end-of-studies internship at InstaDeep. The platform provides a user-friendly interface to manage containers, images, networks, and volumes efficiently. Built with a .NET backend and a React/Next.js frontend, it allows developers to visualize, control, and monitor Docker resources without relying on CLI tools. Implemented Clean Architecture and SOLID principles for maintainability, and integrated DevOps practices for seamless deployment and scalability.',
+		shortDescription:
+			'Docker container management platform with .NET and Next.js, built at InstaDeep with focus on usability, scalability, and DevOps practices.',
+		links: [],
+		logo: Assets.InstaDeep,
+		name: 'Containers Manager',
+		period: {
+			from: new Date(2025, 2),
+			to: new Date(2025, 8)
+		},
+		skills: getSkills('dotnet', 'nextjs', 'react', 'docker', 'postgresql', 'postman', 'swagger', 'tailwind', 'github'),
+		type: 'Web Application',
+		screenshots: [
+			{
+				label: 'Dashboard Overview',
+				src: '/screenshots/ContainersManager/system_dashboard.png'
+			},
+			{
+				label: 'Container List View',
+				src: '/screenshots/ContainersManager/container_list.png'
+			},
+			{
+				label: 'Image List View',
+				src: '/screenshots/ContainersManager/image_list.png'
+			},
+			{
+				label: 'Registry List View',
+				src: '/screenshots/ContainersManager/registry_list.png'
+			},
+			{
+				label: 'Network List View',
+				src: '/screenshots/ContainersManager/network_management.png'
+			},
+			{
+				label: 'Volume List View',
+				src: '/screenshots/ContainersManager/volume_management.png'
+			},
+			{
+				label: 'Container Details',
+				src: '/screenshots/ContainersManager/container_details.png'
+			},
+			{
+				label: 'Container Logs',
+				src: '/screenshots/ContainersManager/container_logs.png'
+			},
+			{
+				label: 'Container Terminal',
+				src: '/screenshots/ContainersManager/container_terminal.png'
+			},
+			{
+				label: 'Container Stats',
+				src: '/screenshots/ContainersManager/container_stats.png'
+			},
+			{
+				label: 'Image Details',
+				src: '/screenshots/ContainersManager/image_details.png'
+			},
+			{
+				label: 'Image Documentation',
+				src: '/screenshots/ContainersManager/image_documentation.png'
+			},
+			{
+				label: 'Image Building',
+				src: '/screenshots/ContainersManager/image_build.png'
+			},
+			{
+				label: 'Network Details',
+				src: '/screenshots/ContainersManager/network_details.png'
+			},
+			{
+				label: 'Volume Details',
+				src: '/screenshots/ContainersManager/volume_details.png'
+			}
+		]
+	},
     {
         slug: 'loyaltyApp',
-        color: 'gray', // Bootstrap blue
+        color: 'gray', 
         description:
             'Developed a loyalty application optimizing customer engagement for retail. Implemented a points-based system with secure interfaces, user-friendly admin controls, and integrated authentication using Keycloak. Managed deployment with Docker.',
         shortDescription:

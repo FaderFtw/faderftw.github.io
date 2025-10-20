@@ -33,29 +33,37 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
-		slug: 'python',
-		color: 'blue',
-		description: 'Python is a high-level, interpreted programming language known for its readability and versatility.',
-		logo: Assets.Python,
-		name: 'Python',
-		category: 'pro-lang'
+		slug: 'nextjs',
+		color: 'black',
+		description: 'Next.js is a React framework that enables server-side rendering and static site generation for building fast web applications.',
+		logo: Assets.NextJs,
+		name: 'Next.js',
+		category: 'framework'
 	}),
 	defineSkill({
+		slug: 'dotnet',
+		color: 'purple',
+		description: '.NET is a free, cross-platform, open-source developer platform for building many different types of applications.',
+		logo: Assets.Dotnet,
+		name: '.NET',
+		category: 'framework'
+	}),
+/* 	defineSkill({
 		slug: 'angular',
 		color: 'red',
 		description: 'Angular is a platform for building mobile and desktop web applications using TypeScript and HTML.',
 		logo: Assets.Angular,
 		name: 'Angular',
 		category: 'framework'
-	}),
-	defineSkill({
+	}), */
+/* 	defineSkill({
 		slug: 'laravel',
 		color: 'red',
 		description: 'Laravel is a PHP framework for web artisans, providing elegant syntax and powerful tools for building applications.',
 		logo: Assets.Laravel,
 		name: 'Laravel',
 		category: 'framework'
-	}),
+	}), */
 	defineSkill({
 		slug: 'reactjs',
 		color: 'cyan',
@@ -144,7 +152,7 @@ export const items = [
 		name: 'Tailwind CSS',
 		category: 'markup-style'
 	}),
-	defineSkill({
+/* 	defineSkill({
 		slug: 'numpy',
 		color: 'blue',
 		description: 'NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices.',
@@ -167,7 +175,7 @@ export const items = [
 		logo: Assets.TensorFlow,
 		name: 'TensorFlow',
 		category: 'library'
-	}),	
+	}),	 */
 	defineSkill({
 		slug: 'kubernetes',
 		color: 'blue',
@@ -194,12 +202,20 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'cpp',
-		color: '#37048c',
+		color: '#19558e',
 		description: 'C++ is a general-purpose, procedural programming language widely used for system programming, embedded programming, and competitive programming, thanks to its performance and flexibility.',
 		logo: Assets.Cpp, 
 		name: 'C++',
 		category: 'pro-lang'
-	}),	
+	}),
+	defineSkill({
+		slug: 'csharp',
+		color: '#753686',
+		description: 'CSharp is a general-purpose, procedural programming language widely used for system programming, embedded programming, and competitive programming, thanks to its performance and flexibility.',
+		logo: Assets.Csharp,
+		name: 'CSharp',
+		category: 'pro-lang'
+	}),		
 	defineSkill({
 		slug: 'azure',
 		color: 'blue',
@@ -225,6 +241,14 @@ export const items = [
 		category: 'devtools'
 	}),
 	defineSkill({
+		slug: 'swagger',
+		color: 'green',
+		description: 'Swagger is an open-source framework for designing, building, documenting, and consuming RESTful web services.',
+		logo: Assets.Swagger,
+		name: 'Swagger',
+		category: 'devtools'
+	}),
+	defineSkill({
 		slug: 'github',
 		color: 'black', 
 		description: 'A platform for version control and collaboration, allowing developers to manage and share their code.',
@@ -232,14 +256,14 @@ export const items = [
 		name: 'GitHub',
 		category: 'devtools'
 	}),
-	defineSkill({
+/* 	defineSkill({
 		slug: 'svelte',
 		color: 'orange',
 		description: 'Svelte is a new way to build web applications, featuring a reactive programming model and a component-based architecture.',
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'framework'
-	}),
+	}), */
 	defineSkill({
 		slug: 'terraform',
 		color: 'blue',
@@ -248,14 +272,14 @@ export const items = [
 		name: 'Terraform',
 		category: 'devops'
 	}),
-	defineSkill({
+/* 	defineSkill({
 		slug: 'jmeter',
 		color: '#d22128',
 		description: 'Apache JMeter is an open-source software designed to load test functional behavior and measure performance.',
 		logo: Assets.JMeter,
 		name: 'JMeter',
 		category: 'test'
-	}),
+	}), */
 	defineSkill({
 		slug: 'jenkins',
 		color: 'red',

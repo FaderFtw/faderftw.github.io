@@ -1,8 +1,24 @@
 import Assets from './assets';
 import { getSkills } from './skills';
-import { ContractType, type Experience } from '../types';
+import { ContractType, type Experience, type Link } from '../types';
 
 export const items: Array<Experience> = [
+	{
+		slug: 'end-of-studies-internship-instadeep',
+		company: 'InstaDeep',
+		description:
+			'For my End of Studies Project at InstaDeep, I developed a full-featured Docker container management platform designed to simplify container and image operations through an intuitive web interface. The project integrated a .NET backend with a React/Next.js frontend, providing real-time container lifecycle management, image handling, and registry integration. I also applied DevOps principles and Clean Architecture to ensure scalability, maintainability, and robust performance. This experience deepened my expertise in containerization, software design patterns, and modern web development practices.',
+		contract: ContractType.Internship,
+		type: 'DevOps & Software Engineering',
+		location: 'Tunis, Tunisia',
+		period: { from: new Date(2024, 1, 3), to: new Date(2024, 7, 1) },
+		skills: getSkills('dotnet', 'nextjs', 'react', 'docker', 'postgresql', 'postman', 'swagger', 'tailwind', 'github'),
+		name: 'Software Engineer Intern',
+		color: '#69b1da',
+		links: [{ to: 'https://instadeep.com', label: 'InstaDeep', newTab: true }],
+		logo: Assets.InstaDeep,
+		shortDescription: 'Built a Docker container management platform using .NET and Next.js.'
+	},
 	{
 		slug: 'summer-internship-satoripop',
 		company: 'Satoripop',
@@ -14,8 +30,8 @@ export const items: Array<Experience> = [
 		skills: getSkills('angular', 'spring-boot', 'docker', 'javascript', 'html', 'css', 'github'),
 		name: 'Full Stack Developer',
 		color: 'yellow',
-		links: [],
-		logo: Assets.Satoripop, 
+		links: [{ to: 'https://satoripop.com', label: 'Satoripop', newTab: true }],
+		logo: Assets.Satoripop,
 		shortDescription: 'Developed a loyalty application for retail.'
 	},
 	{
@@ -29,8 +45,8 @@ export const items: Array<Experience> = [
 		skills: getSkills('laravel', 'postgresql', 'js', 'html', 'css', 'github'),
 		name: 'Full Stack Developer',
 		color: 'red',
-		links: [],
-		logo: Assets.Anypli, 
+		links: [{ to: 'https://anypli.com', label: 'Anypli', newTab: true }],
+		logo: Assets.Anypli,
 		shortDescription: 'Managed advanced sports leagues.'
 	},
 	{

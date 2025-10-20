@@ -9,7 +9,7 @@ export const items: Array<Education> = [
 		logo: Assets.FST, 
 		name: 'Faculty of Sciences Tunis',
 		organization: 'Faculty of Sciences Tunis',
-		period: { from: new Date(2022, 0, 1), to: new Date(2024, 5, 1) }, // Adjust year as per your graduation date
+		period: { from: new Date(2022, 9, 1), to: new Date(2025, 9, 0) },
 		shortDescription: '',
 		slug: 'engineering-degree',
 		subjects: ['Software Development', 'Agile Methods', 'Artificial Intelligence', 'Machine Learning', 'DevOps', 'Computer Science', 'Cloud Foundations']

@@ -22,20 +22,19 @@
 	<title>{useTitle(title, titleSuffix)}</title>
 </svelte:head>
 
-<div class="col self-center flex-1 md:flex-row md:self-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px">
+<div class="col mx-3 self-center flex-1 md:flex-row md:self-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px">
 	<div class="md:flex-1 gap-10px">
 		<MainTitle 
 			classes="md:text-left"
-			typedItems={[`${name} ${lastName},`, 'Full-stack developer,', 'ML enthusiast,']} 
+			typedItems={[`${name} ${lastName},`, 'Full-stack developer,', 'Cloud/DevOps enthusiast,']} 
 		/>
 		
 		<p class="text-[var(--tertiary-text)] text-center md:text-justify lg:text-justify md:text-left text-[1.2em] font-extralight mx-3 md:mx-0">
 			I am a software engineer with strong skills in 
 			<span class="font-bold">Full-stack development</span>, 
-			<span class="font-bold">Machine Learning</span>, 
 			<span class="font-bold">Cloud</span>, and 
-			<span class="font-bold">DevOps </span>technologies. I am currently seeking an 
-			<span class="font-bold">internship </span> for <span class="font-bold"> my final engineering project (PFE)</span> to apply my expertise in developing efficient, user-focused solutions. I am driven by challenges and eager to contribute to impactful projects in a professional environment.
+			<span class="font-bold">DevOps</span> technologies. I am currently seeking a 
+			<span class="font-bold">full-time position</span> to apply my expertise in developing efficient, user-focused solutions. I am driven by challenges and eager to contribute to impactful projects in a professional environment.
 		</p>
 		<div class="flex flex-col md:flex-row justify-between items-center p-y-15px">
 			<div class="row flex justify-center md:justify-start gap-2 items-center mt-2 mb-4 md:mb-0">
