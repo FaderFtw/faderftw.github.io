@@ -12,12 +12,12 @@
 	<div class="resume-page flex flex-col items-center px-6 max-w-7xl">
 		<section class="guide text-center mb-3">
 			<p class="text-sm md-text-lg font-semibold text-[var(--tertiary-text)] ">
-				Download and Preview the Resume
+				Download and Preview the Resume + Certificats
 			</p>
 		</section>
 
 		{#if data}
-			<ActionButton href={data} label="Download Resume" classes="mb-5" download={data}/>
+			<ActionButton href={data} label="Download Resume + Certificats" classes="mb-5" download={data}/>
 			<div class="pdf-viewer w-full max-w-5xl h-[150vh] shadow-lg rounded-lg border border-gray-300 overflow-hidden">
 				<iframe src={pdfUrl}  title="My Resume" class="w-full h-full" frameborder="0"></iframe>
 			</div>
